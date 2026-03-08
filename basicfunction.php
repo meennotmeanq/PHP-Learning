@@ -1,12 +1,23 @@
 <?php
 
 //การสร้างฟัง์ชั่น
-function show()
+function show($name) //parameter
 {
-    print("<b>Hello Web Developer</b>");
+    print("Hello <b> $name </b>");
+    print("<br>");
+    print("<hr>");
+}
+function add($number1, $number2, $number3)
+{
+    $result = $number1 + $number2 + $number3; //การคำนวณ
+    print($number1 . " + " . $number2 . " + " . $number3 . " = " . $result);
     print("<br>");
     print("<hr>");
 }
 
 //การเรียกฟังก์ชั่น
-show();
+show("meennotmeanq"); //argument
+show("the Developer"); //argument
+
+add(5, 10, 20);
+add(1000, 5000, 200);

@@ -43,3 +43,22 @@ getBonus();
 print("<br> จำนวนโบนัส = " . 10000 * getBonus());
 $salary = (10000 * getBonus()) + 10000;
 print("<br> เงินเดือนรวมโบนัส = " . $salary);
+echo "<hr>";
+
+//แบบที่4
+// รับเงินเดือนเข้ามา
+// ส่งผลการคำนวณรายได้ต่อปี
+
+function getTotal($salary, $count)
+{
+    //คำนวณเงินเดือน * จำนวนเดือนที่ทำงาน
+    return  $salary * $count;
+}
+$amount = 30000; //เงินเดือน
+$month = 4;
+print("เงินเดือนของฉันมีค่าเท่ากับ " . $amount . " บาท");
+print("<br>");
+print("ระยะเวลา = " . $month . " เดือน");
+print("<br>");
+$total = getTotal($amount, $month);
+print("รายได้ = " . $total . " บาท");

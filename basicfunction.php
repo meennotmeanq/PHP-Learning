@@ -62,3 +62,17 @@ print("ระยะเวลา = " . $month . " เดือน");
 print("<br>");
 $total = getTotal($amount, $month);
 print("รายได้ = " . $total . " บาท");
+echo "<hr>";
+
+//ชื่อ นามสกุล ที่อยู่
+function showData($fname = "ไม่ระบุ", $lname = "ไม่ระบุ", $city = "ไม่ระบุ")
+{
+    print("ชื่อ = " . $fname . "<br>");
+    print("นามสกุล = " . $lname . "<br>");
+    print("ที่อยู่ = " . $city . "<br>");
+    print("<hr>");
+}
+//เรียกใช้งาน
+showData("Kaveekit", "Sawaengha", "ชลบุรี");
+showData("Jojo", "Jaidee", "น่าน");
+showData("Coach", "Jaikla");

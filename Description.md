@@ -170,3 +170,7 @@ While Loop
     function ชื่อฟังก์ชั่น(parameter1, parameter2,...){
         return ค่าที่่ส่งออกไป
     }
+36. ฟังก์ชั่นแบบกำหนดค่าเริ่มต้น
+    function ชื่อฟังก์ชั่น (name = "kaveekit",parameter2,...){
+        //คำสั่งต่างๆ
+    }

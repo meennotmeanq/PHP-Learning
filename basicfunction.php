@@ -51,7 +51,7 @@ echo "<hr>";
 
 function getTotal($salary, $count)
 {
-    //คำนวณเงินเดือน * จำนวนเดือนที่ทำงาน
+    // คำนวณเงินเดือน * จำนวนเดือนที่ทำงาน
     return  $salary * $count;
 }
 $amount = 30000; //เงินเดือน
@@ -76,3 +76,19 @@ function showData($fname = "ไม่ระบุ", $lname = "ไม่ระบ
 showData("Kaveekit", "Sawaengha", "ชลบุรี");
 showData("Jojo", "Jaidee", "น่าน");
 showData("Coach", "Jaikla");
+
+// global
+$x = 100;
+$y = 10;
+
+function showNumber()
+{
+    global $x;
+    $GLOBALS["z"] = 50000;
+    // local
+    print("ตัวแปร x มีค่า = " . $x);
+}
+
+showNumber();
+print("<br>ค่า x = " . $x);
+print("<br>ค่า z = " . $z);

@@ -53,6 +53,10 @@ for ($index = 0; $index < $total; $index++) {
     print("ตำแหน่งของสมาชิก = " . $index . " = " . $fruits[$index] . "<br>");
 }
 
+foreach ($fruits as $item) {
+    print($item . "<br>");
+}
+
 print_r(array_count_values($number));
 print("<br>" . "จำนวนสมาชิกมีค่า = " . $total . "<hr>");
 
@@ -61,10 +65,11 @@ $colors = ["yellow" => "สีเหลือง", "red" => "สีแดง", "
 $animals = ["dog" => "สุนัข", "cat" => "แมว", "pig" => "หมู", "rabbit" => "กระต่าย"];
 
 foreach ($colors as $key => $values) {
-    print($key . " => " . $values .  "<br>");
+    print("Key = " . $key . " => " . "Values = " . $values .  "<br>");
 }
 print("<br>");
 foreach ($animals as $key => $values) {
-    print($key . " => " . $values .  "<br>");
+    print("Key = " . $key . " => " . "Values = " . $values .  "<br>");
 }
+//! เข้าถึง Array ด้วยการ While Loop ใช้ฟังก์ชั่น each ในการอ่านค่า array ทั้งข้อมูลและอินเด็กซ์ function each ถูก PHP เอาออกไปตั้งแต่ version 8.0 ให้ใช้ foreach แทน
 print("<hr>");

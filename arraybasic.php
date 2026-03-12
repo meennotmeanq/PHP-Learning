@@ -37,9 +37,19 @@ $alphabet = range("A", "Z", 3);
 print_r($alphabet);
 print("<hr>");
 
-$room1 = ["A01" => "สมชาย", "A02" => "สมหญิง", "A03" => "สมปอง"];
-print_r($room1);
+$room = ["A01" => "สมชาย", "A02" => "สมหญิง", "A03" => "สมปอง"];
+print_r($room);
 print("<hr>");
 $colors = ["yellow" => "สีเหลือง", "red" => "สีแดง"];
 print($colors["yellow"]);
 print("<hr>");
+
+$number = [10, 20, 30, 10, 20, 30, 40, 10, 20, 30];
+$fruits = ["ส้ม", "มะละกอ", "แอปเปิ้ล", "กล้วย", "ขนุน", "น้อยหน่า", "กล้วย", "องุ่น", "แตงโม"];
+
+$total = count($fruits);
+for ($index = 0; $index < $total; $index++) {
+    print("ตำแหน่งของสมาชิก = " . $index . " = " . $fruits[$index] . "<br>");
+}
+
+print_r(array_count_values($number));

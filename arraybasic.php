@@ -30,4 +30,8 @@ echo ("<br>");
 
 $animal = array("dog" => "หมา", "cat" => "แมว", "pig" => "หมู");
 $products = array("banana" => 50, "bags" => 15000, "table" => 500);
-print($products["bags"]);
+print($products["bags"] . "<hr>");
+
+$alphabet = range("A", "Z", 3);
+
+print_r($alphabet);

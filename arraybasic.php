@@ -35,3 +35,11 @@ print($products["bags"] . "<hr>");
 $alphabet = range("A", "Z", 3);
 
 print_r($alphabet);
+print("<hr>");
+
+$room1 = ["A01" => "สมชาย", "A02" => "สมหญิง", "A03" => "สมปอง"];
+print_r($room1);
+print("<hr>");
+$colors = ["yellow" => "สีเหลือง", "red" => "สีแดง"];
+print($colors["yellow"]);
+print("<hr>");

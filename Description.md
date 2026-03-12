@@ -213,3 +213,8 @@ While Loop
 42. เข้าถึง Array ด้วยการ Loop
     count($pets); นับจำนวนสมาชิกในอาร์เรย์ ใช้กับอาร์เรย์ที่มี index เป็นตัวเลขที่เรียงลำดับจากน้อยไปมาก
     array_count_values($pets); ใช้นับความถี่ของข้อมูลใน array ที่มีค่าซ้ำกัน
+43. //! เข้าถึง Array ด้วยการ While Loop
+    ใช้ฟังก์ชั่น each ในการอ่านค่า array ทั้งข้อมูลและอินเด็กซ์ !// function each ถูก PHP เอาออกไปตั้งแต่ version 8.0 ให้ใช้ foreach แทน
+    foreach ($index as $key => $value) {
+    print($key);
+    }

@@ -44,6 +44,7 @@ $colors = ["yellow" => "สีเหลือง", "red" => "สีแดง"];
 print($colors["yellow"]);
 print("<hr>");
 
+//แบบเดี่ยว
 $number = [10, 20, 30, 10, 20, 30, 40, 10, 20, 30];
 $fruits = ["ส้ม", "มะละกอ", "แอปเปิ้ล", "กล้วย", "ขนุน", "น้อยหน่า", "กล้วย", "องุ่น", "แตงโม"];
 
@@ -53,3 +54,17 @@ for ($index = 0; $index < $total; $index++) {
 }
 
 print_r(array_count_values($number));
+print("<br>" . "จำนวนสมาชิกมีค่า = " . $total . "<hr>");
+
+//แบบคู่
+$colors = ["yellow" => "สีเหลือง", "red" => "สีแดง", "orange" => "สีส้ม"];
+$animals = ["dog" => "สุนัข", "cat" => "แมว", "pig" => "หมู", "rabbit" => "กระต่าย"];
+
+foreach ($colors as $key => $values) {
+    print($key . " => " . $values .  "<br>");
+}
+print("<br>");
+foreach ($animals as $key => $values) {
+    print($key . " => " . $values .  "<br>");
+}
+print("<hr>");

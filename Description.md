@@ -231,3 +231,5 @@ While Loop
         array("mouse","เมาส์", 900),
         array("speaker","ลำโพง", 2500)
     ) 
+47. เข้าถึง Array 2 มิติ ด้วย For Loop
+    

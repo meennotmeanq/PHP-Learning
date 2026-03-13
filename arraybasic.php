@@ -79,7 +79,16 @@ $products = array(
     array("คีย์บอร์ด", "keyboard", 900),
     array("เมาส์", "mouse", 1900),
     array("โต๊ะ", "table", 2500),
+    array("จอ", "monitor", 12000),
 );
 
 //การเข้าถึง => แถว , คอลัมน์
-print($products[1][1]);
+print($products[1][1] . "<hr>");
+//For Loop
+for ($row = 0; $row < count($products); $row++) {
+    print("ชิ้นที่ " . $row . "<br>");
+    for ($column = 0; $column < count($products[$row]); $column++) {
+        print("สินค้า " . ($products[$row][$column]) . "<br>");
+    }
+    print("<hr>");
+}

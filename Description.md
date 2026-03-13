@@ -223,4 +223,11 @@ While Loop
 45. การเข้าถึงข้อมูลด้วย foreach แบบธรรมดา 
     foreach($array as $value)
         statement
-        
+46. Array 2 มิติ
+    Array ที่มีข้อมูลสมาชิกภายในเป็น array (array ซ้อน array) เปรียบเสมือนกับ matrix
+    มีโครงสร้างเป็นรูปแบบ แถว (แนวนอน) และคอลัมน์ (แนวตั้ง)
+    $products = array(
+        array("keyboard","คัน์บอร์ด", 1500),
+        array("mouse","เมาส์", 900),
+        array("speaker","ลำโพง", 2500)
+    ) 

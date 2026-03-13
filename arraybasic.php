@@ -73,3 +73,13 @@ foreach ($animals as $key => $values) {
 }
 //! เข้าถึง Array ด้วยการ While Loop ใช้ฟังก์ชั่น each ในการอ่านค่า array ทั้งข้อมูลและอินเด็กซ์ function each ถูก PHP เอาออกไปตั้งแต่ version 8.0 ให้ใช้ foreach แทน
 print("<hr>");
+
+//แบบ 2 มิติ
+$products = array(
+    array("คีย์บอร์ด", "keyboard", 900),
+    array("เมาส์", "mouse", 1900),
+    array("โต๊ะ", "table", 2500),
+);
+
+//การเข้าถึง => แถว , คอลัมน์
+print($products[1][1]);

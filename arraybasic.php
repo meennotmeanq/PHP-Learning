@@ -106,3 +106,23 @@ foreach ($products as $product) {
     print("ราคา = " . $product["Price"] . " บาท");
     print("<hr>");
 }
+
+$fruits = ["มะละกอ", "ฝรั่ง", "มะนาว", "ทุเรียน"];
+print_r($fruits);
+print("<br>");
+
+array_push($fruits, "มะม่วง", "มังคุด");
+print_r($fruits);
+print("<br>");
+
+array_pop($fruits);
+print_r($fruits);
+print("<br>");
+
+array_unshift($fruits, "แอปเปิล", "เงาะ");
+array_unshift($fruits, "มะพร้าว");
+print_r($fruits);
+print("<br>");
+
+array_shift($fruits);
+print_r($fruits);

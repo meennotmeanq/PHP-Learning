@@ -232,4 +232,23 @@ While Loop
         array("speaker","ลำโพง", 2500)
     ) 
 47. เข้าถึง Array 2 มิติ ด้วย For Loop
-    
+    for ($row = 0; $row < count($products); $row++) {
+    print("ชิ้นที่ " . $row . "<br>");
+    for ($column = 0; $column < count($products[$row]); $column++) {
+        print("สินค้า " . ($products[$row][$column]) . "<br>");
+    }
+    print("<hr>");
+}
+48. เข้าถึง Array 2 มิติ ด้วย Foreach
+    foreach ($products as $product) {
+    print("ชื่อสินค้า TH = " . $product[0] . "<br>");
+    print("ชื่อสินค้า EN = " . $product[1] . "<br>");
+    print("ราคา = " . $product[2] . " บาท");
+    print("<hr>");
+}
+49. ฟังก์ชั่นเพิ่มและลบสมาชิกใน Array
+    array_push() - ใช้เพิ่มสมาชิกในตำแหน่งสุดท้าย
+    array_pop() - ใช้ลบสมาชิกในตำแหน่งสุดท้าย
+    array_inshift() - ใช้เพิ่มสมาชิกในตำแหน่งแรก
+    array_shift() - ใช้ลบสมาชิกในตำแหน่งแรก
+    array_splice() - ใช้ลบและเพิ่มสมาชิกในตำแหน่งที่ต้องการ

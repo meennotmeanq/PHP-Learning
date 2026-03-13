@@ -92,3 +92,17 @@ for ($row = 0; $row < count($products); $row++) {
     }
     print("<hr>");
 }
+$products = array(
+    array("TH" => "คีย์บอร์ด", "EN" => "keyboard", "Price" => 900),
+    array("TH" => "เมาส์", "EN" => "mouse", "Price" => 1900),
+    array("TH" => "โต๊ะ", "EN" => "table", "Price" => 2500),
+    array("TH" => "จอ", "EN" => "monitor", "Price" => 12000),
+);
+
+//For Each
+foreach ($products as $product) {
+    print("ชื่อสินค้า TH = " . $product["TH"] . "<br>");
+    print("ชื่อสินค้า EN = " . $product["EN"] . "<br>");
+    print("ราคา = " . $product["Price"] . " บาท");
+    print("<hr>");
+}

@@ -126,3 +126,11 @@ print("<br>");
 
 array_shift($fruits);
 print_r($fruits);
+print("<br>");
+
+// array_splice("ชื่อ array", "ตำแหน่ง index", "จำนวนที่ต้องการลบ");
+print_r($fruits);
+print("<br>");
+
+array_splice($fruits, 1, 0, array("องุ่น", "มะม่วง"));
+print_r($fruits);

@@ -252,4 +252,32 @@ While Loop
     array_inshift() - ใช้เพิ่มสมาชิกในตำแหน่งแรก
     array_shift() - ใช้ลบสมาชิกในตำแหน่งแรก
     array_splice() - ใช้ลบและเพิ่มสมาชิกในตำแหน่งที่ต้องการ
+50. ฟังก์ชั่นเรียงลำดับสมาชิกใน Array
+    ฟังก์ชั่นเรียงลำดับ Array แบบเดี่ยว
+    sort() เรียงข้อมูลจากน้อยไปมาก
+    rsort() เรียงข้อมูลจากมากไปน้อย
+
+    sort() ถ้าเป็นข้อความจะเรียงจากพยัญชนะไปสรพ
+    rsort() ถ้าเป็นข้อความจะเรียงจากพยัญสระไปพยัญชนะ
+
+    ฟังก์ชั่นเรียงลำดับ Array แบบจับคู่
+    asort() เรียงจากน้อยไปมาก
+    arsort() เรียงจากมากไปน้อย
     
+    ksort() เรียง Index จากน้อยไปมาก
+    krsort() เรียง Index จากมากไปน้อย
+51. ฟังก์ชั่นสลับค่าใน Array
+    shuffle() สุ่มสลับค่าข้อมูล โดยฟังก์ชั่นจะกำหนดค่า index ใหม่และเก็บลงในตัวแปร Array เดิม
+    array_reverse() คัดลอก Array ไปไว้ใน Array ใหม่พร้อมเรียงลำดับแบบย้อนกลับ (Reverse)
+52. ฟังก์ชั่นเกี่ยวกับ Index และ Value
+    array_keys() ดึง index ทั้งหมดของ Array
+    array_values() ดึง value ทั้งหมดของ Array
+    array_flip() สลับ index กับ value
+    array_unique() ลบค่าข้อมูลซ้ำใน Array
+53. ฟังก์ชั่นการค้นหาข้อมูลใน Array
+    array_key_exists() ตรวจสอบว่ามร Index นี้ใน Array หรือไม่
+    in_array() ตรวจสอบว่ามี value นี้ใน Array หรือไม่
+54. ฟังก์ชั่นการรวม Array
+    array_merge() รวม Array หากมี Index ที่ซ้ำกันจะนำค่าข้อมูล Array ชุดหลังมาทับข้อมูล Array ชุดแรก
+    array_merge_recursive() รวม Array หากมี Index ที่ซ้ำกันจะนำข้อมูล Array ชุดหลังมาจ่าท้ายข้อมูลชุดแรก
+    array_combine() รวม Array โดยใช้ Array ตัวแรกเป็น Index และใช้ Array ตัวที่สองเป็น Value
